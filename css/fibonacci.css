@@ -74,32 +74,6 @@ body {
 }
 
 .box .content {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-}
-
-.quadrant {
-	background-color: #eee;
-	background-color: rgba( 86, 61, 124, .15 );
-	float: left;
-	position: relative;
-	width: 50%;
-}
-
-.quad-2 {
-	
-}
-
-.quadrant:before {
-	content: "";
-	display: block;
-	padding-top: 100%; /* initial ratio of 1:1 */
-}
-
-.quad-content {
 	padding: 1em;
 	position: absolute;
 	top: 0;
@@ -120,19 +94,19 @@ body {
 	margin: 0;
 }
 
-.fib-8 .quad-content {
+.fib-8 .content {
+	font-size: 3em;
+}
+
+.fib-5 .content {
 	font-size: 2em;
 }
 
-.fib-5 .quad-content {
+.fib-3 .content {
 	font-size: 1.5em;
 }
 
-.fib-3 .quad-content {
-	font-size: 1.25em;
-}
-
-.fib-2 .quad-content {
+.fib-2 .content {
 	font-size: 1em;
 }
 
@@ -144,16 +118,18 @@ body {
 	font-size: .6em;
 }
 
-.content,
-.quad-content {
+.fib-8 .content,
+.fib-5 .content,
+.fib-3 .content,
+.fib-2 .content,
+.fib-1-1 .content,
+.fib-1-2 .content {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .content h3 {
-	color: #fff;
 	font-size: 1.5em;
 	margin: 0;
-	text-shadow: .05em .05em 0px rgba( 0, 0, 0, 0.5 );
 }
