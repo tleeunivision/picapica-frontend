@@ -66,7 +66,10 @@ body {
 	background-color: #fff;
 	background-color: rgba( 255, 255, 255, 1 );
 	position: relative;
-	/* width: 50%; */ /* desired width */
+}
+
+.page-topic .fib-8 .content {
+	background-color: rgba( 0, 0, 0, .4 );
 }
 
 .box:before {
@@ -150,6 +153,10 @@ body {
 	background-color: rgba( 0, 0, 0, .1 );
 }
 
+.content img {
+	max-width: 100%;
+}
+
 .content.ab-light {
 	color: #333;
 }
@@ -190,10 +197,15 @@ body {
 .fib-1-1,
 .fib-1-2,
 .content,
-.quadrant {
+.quadrant,
+.page-topic .fib-8 {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.content p {
+	color: #fff;
 }
 
 .content h3 {
@@ -202,6 +214,11 @@ body {
 	font-size: 1.2em;
 	margin: 0;
 	text-shadow: .05em .05em 0px rgba( 0, 0, 0, 0.5 );
+}
+
+.page-topic .fib-8 h3 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
 }
 
 .half-content h3 {
@@ -214,4 +231,8 @@ body {
 .fyre-stream-header,
 .fyre .fyre-notifier-container {
 	display: none;
+}
+
+.fyre .fyre-comment {
+	font-size: .8em;
 }
