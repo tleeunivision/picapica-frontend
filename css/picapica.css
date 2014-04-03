@@ -1,4 +1,6 @@
 body {
+	background: url("/img/wood.png") repeat 0 0;
+	font-family: 'Tienne', 'Times New Roman', Times, serif;
 	padding-top: 70px;
 	padding-bottom: 30px;
 }
@@ -61,8 +63,8 @@ body {
 }
 
 .box {
-	background-color: #eee;
-	background-color: rgba( 86, 61, 124, .15 );
+	background-color: #fff;
+	background-color: rgba( 255, 255, 255, 1 );
 	position: relative;
 	/* width: 50%; */ /* desired width */
 }
@@ -71,6 +73,11 @@ body {
 	content: "";
 	display: block;
 	padding-top: 100%; /* initial ratio of 1:1 */
+}
+
+.content,
+.quad-content {
+	overflow: hidden;
 }
 
 .box .content {
@@ -89,10 +96,6 @@ body {
 	width: 50%;
 }
 
-.quad-2 {
-	
-}
-
 .quadrant:before {
 	content: "";
 	display: block;
@@ -100,12 +103,51 @@ body {
 }
 
 .quad-content {
+	background-color: rgba( 0, 0, 0, .4 );
 	padding: 1em;
 	position: absolute;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
+	-webkit-transition: background-color 500ms ease-in-out;
+	-moz-transition: background-color 500ms ease-in-out;
+	-o-transition: background-color 500ms ease-in-out;
+	transition: background-color 500ms ease-in-out;
+}
+
+.half {
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+.half:before {
+	content: "";
+	display: block;
+	padding-top: 50%; /* initial ratio of 1:1 */
+}
+
+.half-content {
+	padding: 1em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.page-topic .fib-8 .content {
+	padding: 1em;
+}
+
+.page-topic .fib-5 .content {
+	overflow: scroll;
+	padding: 1em;
+}
+
+.quad-content:hover {
+	background-color: rgba( 0, 0, 0, .1 );
 }
 
 .content.ab-light {
@@ -120,7 +162,8 @@ body {
 	margin: 0;
 }
 
-.fib-8 .quad-content {
+.fib-8 .quad-content,
+.page-topic .fib-8 .content {
 	font-size: 2em;
 }
 
@@ -129,11 +172,11 @@ body {
 }
 
 .fib-3 .quad-content {
-	font-size: 1.25em;
+	font-size: .9em;
 }
 
 .fib-2 .quad-content {
-	font-size: 1em;
+	font-size: .7em;
 }
 
 .fib-1-1 .content {
@@ -144,8 +187,10 @@ body {
 	font-size: .6em;
 }
 
+.fib-1-1,
+.fib-1-2,
 .content,
-.quad-content {
+.quadrant {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -153,7 +198,20 @@ body {
 
 .content h3 {
 	color: #fff;
-	font-size: 1.5em;
+	font-family: 'Questrial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 1.2em;
 	margin: 0;
 	text-shadow: .05em .05em 0px rgba( 0, 0, 0, 0.5 );
+}
+
+.half-content h3 {
+	color: #444;
+}
+
+/***** LiveFyre *****/
+.fyre-auth,
+.fyre-editor-small,
+.fyre-stream-header,
+.fyre .fyre-notifier-container {
+	display: none;
 }
