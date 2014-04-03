@@ -1,8 +1,40 @@
 body {
-	background: url("/img/wood.png") repeat 0 0;
+	background: url("/img/grunge.jpg") repeat 0 0;
 	font-family: 'Tienne', 'Times New Roman', Times, serif;
 	padding-top: 70px;
 	padding-bottom: 30px;
+}
+
+.navbar {
+	background: #555;
+}
+
+.navbar-brand {
+	background: url("/img/pica-pica-color.png") no-repeat 0 0;
+	background-size: contain;
+	display: block;
+	height: 50px;
+	/* padding: 0; */
+	text-indent: -9999px;
+	width: 82px;
+}
+
+.navbar > .container .navbar-brand {
+	margin-left: 0;
+}
+
+.nav a {
+	color: #fff;
+}
+
+.nav > li > a:hover {
+	background: none;
+}
+
+.nav > li.separator {
+	border-right: 1px solid #777;
+	margin: 5px 0;
+	height: 40px;
 }
 
 .fib-8,
@@ -117,6 +149,17 @@ body {
 	-moz-transition: background-color 500ms ease-in-out;
 	-o-transition: background-color 500ms ease-in-out;
 	transition: background-color 500ms ease-in-out;
+}
+
+.native-ad .quad-content {
+	background: none;
+}
+
+.promoted {
+	position: absolute;
+	width: 30%;
+	right: 0;
+	bottom: 0;
 }
 
 .half {
