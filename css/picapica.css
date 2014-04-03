@@ -236,3 +236,7 @@ body {
 .fyre .fyre-comment {
 	font-size: .8em;
 }
+
+.content .fyre .fyre-comment p {
+	color: #333;
+}
